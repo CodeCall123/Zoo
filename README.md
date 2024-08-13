@@ -54,3 +54,48 @@ def most_expensive_to_feed(feeding_costs):
 print(most_expensive_to_feed(feeding_costs))  # Output: "Lion"
 
 ```
+## Task 3: Which Animals Should Be Removed to Save Costs?
+
+**Description**:  
+The zoo is facing budget cuts and needs to reduce feeding costs while ensuring that at least 20 animals remain in the zoo. Your task is to identify which animals should be removed to save the most money, keeping the total number of animals at or above 20.
+
+**Instructions**:
+
+- You will be provided with a list of animals and their daily feeding costs.
+- Write a function that selects the animals that should be removed to minimize feeding costs while maintaining a population of at least 20 animals.
+- Your function should return a list of species that should be removed.
+```
+# Example dataset
+animals_to_remove = [
+    {"species": "Lion", "cost_to_feed": 50},
+    {"species": "Elephant", "cost_to_feed": 70},
+    {"species": "Giraffe", "cost_to_feed": 40},
+    {"species": "Zebra", "cost_to_feed": 30},
+    {"species": "Panda", "cost_to_feed": 60}
+]
+
+# Task: Select animals to remove to minimize costs while keeping 20 animals
+def animals_to_remove_for_savings(animals, total_animals=20):
+    animals.sort(key=lambda x: x['cost_to_feed'], reverse=True)
+    # Logic to select animals while ensuring at least 20 animals remain
+    # This is a simplified example, actual implementation will depend on the total number of animals
+    return [animal['species'] for animal in animals if total_animals > 20]
+
+# Example call (adjust based on actual total animal count)
+print(animals_to_remove_for_savings(animals_to_remove))  # Output: ["Elephant", "Panda"]
+
+```
+
+## Task 4: Which Animal Would Finish a Quarter Mile the Fastest?
+
+**Description**:  
+Imagine a scenario where all the animals in the zoo start sprinting at the same time. The zoo management wants to know which animal would finish a quarter-mile distance the fastest. This information is not only fun but could also be used for educational programs and visitor engagement.
+
+**Instructions**:
+
+- You will receive a dataset that includes the sprint speeds of various animals.
+- Write a function to determine which animal would complete a quarter-mile race the fastest.
+- Your function should return the name of the species that would win the race.
+Code Snippet:
+```
+
