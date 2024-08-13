@@ -37,3 +37,20 @@ Feeding costs are a significant part of the zoo's budget. The zoo wants to know 
 - You will receive a dataset containing the daily feeding costs for different animal species, broken down by gender.
 - Write a function that calculates which species has the highest daily feeding cost.
 - Your function should return the species that costs the most to fee
+
+```
+# Example dataset
+feeding_costs = [
+    {"species": "Lion", "gender": "Male", "cost_to_feed": 50},
+    {"species": "Elephant", "gender": "Female", "cost_to_feed": 30},
+    {"species": "Giraffe", "gender": "Male", "cost_to_feed": 40}
+]
+
+# Task: Find the species that costs the most to feed
+def most_expensive_to_feed(feeding_costs):
+    max_cost_species = max(feeding_costs, key=lambda x: x['cost_to_feed'])
+    return max_cost_species['species']
+
+print(most_expensive_to_feed(feeding_costs))  # Output: "Lion"
+
+```
