@@ -1,5 +1,3 @@
-# Zoo Management Challenge
-
 ## Task 1: Which Animal Lives the Longest?
 
 **Description**:  
