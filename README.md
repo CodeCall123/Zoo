@@ -1,6 +1,6 @@
+**Open the Github Repository: https://github.com/CodeCall123/Zoo/edit/main/README.md and Clone the Project to get started!**
+
 ## Task 1: Which Animal Lives the Longest?
-
-
 
 
 **Description**:  
@@ -105,6 +105,5 @@ Imagine a scenario where all the animals in the zoo start sprinting at the same 
 - You will receive a dataset that includes the sprint speeds of various animals.
 - Write a function to determine which animal would complete a quarter-mile race the fastest.
 - Your function should return the name of the species that would win the race.
-Code Snippet:
-```
+
 
